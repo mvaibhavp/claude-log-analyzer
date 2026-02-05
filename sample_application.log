@@ -1,0 +1,27 @@
+2026-02-05 10:23:45 INFO  [main] Application started successfully
+2026-02-05 10:23:46 INFO  [main] Database connection pool initialized: size=20
+2026-02-05 10:23:47 INFO  [main] REST API server listening on port 8080
+2026-02-05 10:24:12 ERROR [worker-1] Failed to connect to database: Connection timeout after 30000ms
+2026-02-05 10:24:12 ERROR [worker-1] java.sql.SQLException: Unable to acquire JDBC Connection
+2026-02-05 10:24:12 ERROR [worker-1] Caused by: Connection refused (Connection refused)
+2026-02-05 10:24:12 WARN  [worker-1] Retrying database connection (attempt 1/3)
+2026-02-05 10:24:45 ERROR [worker-1] Failed to connect to database: Connection timeout after 30000ms
+2026-02-05 10:24:45 WARN  [worker-1] Retrying database connection (attempt 2/3)
+2026-02-05 10:25:18 ERROR [worker-1] Failed to connect to database: Connection timeout after 30000ms
+2026-02-05 10:25:18 ERROR [worker-1] Max retry attempts reached. Marking service as unhealthy
+2026-02-05 10:25:18 ERROR [health-check] Health check failed: database connectivity issue
+2026-02-05 10:25:20 WARN  [monitor] Service health check failed: database unreachable
+2026-02-05 10:25:25 ERROR [worker-2] API request failed: /api/users/12345 - 503 Service Unavailable
+2026-02-05 10:25:26 ERROR [worker-3] API request failed: /api/orders/get - 503 Service Unavailable
+2026-02-05 10:25:27 ERROR [worker-4] API request failed: /api/products/list - 503 Service Unavailable
+2026-02-05 10:25:30 INFO  [worker-1] Database connection pool exhausted: 0/20 available
+2026-02-05 10:25:35 WARN  [worker-5] Request timeout: client waited 60000ms, no connection available
+2026-02-05 10:25:40 ERROR [worker-6] OutOfMemoryError: Java heap space
+2026-02-05 10:25:40 ERROR [worker-6] Stack trace: at java.util.HashMap.resize(HashMap.java:704)
+2026-02-05 10:25:45 WARN  [gc] GC overhead limit exceeded - spent 98% time in GC
+2026-02-05 10:26:00 INFO  [admin] Manual intervention: attempting database connection pool reset
+2026-02-05 10:26:05 INFO  [admin] Database connection pool cleared and reinitialized
+2026-02-05 10:26:07 INFO  [main] Database connection re-established successfully
+2026-02-05 10:26:08 INFO  [worker-1] Service marked as healthy
+2026-02-05 10:26:10 INFO  [worker-2] API request successful: /api/users/12345 - 200 OK
+2026-02-05 10:26:15 INFO  [monitor] System status: All services operational
