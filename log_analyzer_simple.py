@@ -95,7 +95,8 @@ ANALYSIS:""".format(log_content)
     
     # Request body
     data = {
-        "model": "claude-3-sonnet-20240229",  # Using Claude 3 Sonnet (stable)
+        # "model": "claude-3-sonnet-20240229",  # Using Claude 3 Sonnet (stable)
+        "model": "claude-sonnet-4-5-20250929",  # Using Claude 3 Sonnet (stable)
         "max_tokens": 2000,
         "temperature": 0.3,
         "messages": [
