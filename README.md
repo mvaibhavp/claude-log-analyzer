@@ -2,14 +2,14 @@
 
 A Python tool that leverages Claude AI API to analyze application logs and provide intelligent troubleshooting recommendations.
 
-## 📋 Overview
+##  Overview
 
 As a Solutions Architect with 10+ years of troubleshooting experience, I built this tool to accelerate the initial triage phase of incident response. Instead of manually scanning through hundreds of log lines, this tool uses Claude AI to provide structured analysis, identify root causes, and suggest prioritized troubleshooting steps.
 
 **Author:** Vaibhav Pawar  
 **Purpose:** Demonstrate practical LLM API integration for technical troubleshooting workflows
 
-## 🎯 Use Case
+## Use Case
 
 When investigating production incidents, the first step is often analyzing logs to understand what went wrong. This tool automates that initial analysis by:
 - Identifying errors, warnings, and patterns
@@ -17,12 +17,12 @@ When investigating production incidents, the first step is often analyzing logs 
 - Providing prioritized troubleshooting steps
 - Recommending preventive measures
 
-## 🛠️ Requirements
+## Requirements
 
 - **Python 3.7+**
 - **Anthropic API key** (Claude)
 
-## 📦 Installation
+## Installation
 
 ### 1. Clone or Download This Project
 
@@ -70,7 +70,7 @@ $env:ANTHROPIC_API_KEY="your-api-key-here"
 
 To make it permanent, add to your `.bashrc`, `.zshrc`, or system environment variables.
 
-## 🚀 Usage
+## Usage
 
 ### Basic Usage
 
@@ -326,7 +326,7 @@ python log_analyzer.py /path/to/your/logfile.log
 ✅ Should produce structured output  
 ✅ Should save results to timestamped file  
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 **Error: "ANTHROPIC_API_KEY environment variable not set"**
 - Solution: Set the environment variable as shown in Installation
@@ -344,7 +344,7 @@ python log_analyzer.py /path/to/your/logfile.log
 - Wait a minute and try again
 - Consider upgrading your API plan
 
-## 💡 Future Enhancements
+## Future Enhancements
 
 - [ ] Support for multiple log formats (JSON, syslog, etc.)
 - [ ] Batch processing (analyze multiple files)
@@ -354,7 +354,7 @@ python log_analyzer.py /path/to/your/logfile.log
 - [ ] Custom prompt templates for different log types
 - [ ] Cost tracking (API token usage)
 
-## 📝 Notes
+## Notes
 
 **API Costs:**
 - Claude Sonnet 4: ~$3 per million input tokens, ~$15 per million output tokens
@@ -371,15 +371,15 @@ python log_analyzer.py /path/to/your/logfile.log
 - Depends on log file size and API response time
 - Network latency affects total time
 
-## 🤝 Contributing
+## Contributing
 
 This is a demonstration project for interview purposes. Feel free to fork and adapt for your needs!
 
-## 📄 License
+## License
 
 This is a personal project for educational and demonstration purposes.
 
-## 👤 Author
+## Author
 
 **Vaibhav Pawar**  
 Solutions Architect | 10+ years in technical troubleshooting and escalation engineering
